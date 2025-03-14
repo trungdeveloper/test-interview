@@ -1,6 +1,6 @@
-import { useState } from "react";
 import NavBar from "./components/header/NavBar";
 import Banner from "./components/banner/Banner";
+import { MobileMenu } from "./components/mobile-menu/mobile-menu";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <NavBar />
         <Banner />
       </div>
+      <MobileMenu />
     </>
   );
 }

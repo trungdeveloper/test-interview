@@ -1,20 +1,9 @@
 import React from "react";
 import Logo from "/logo.svg";
 import { NAVS } from "../utils/constants";
+import { Trans } from "@lingui/react/macro";
 
 function NavBar() {
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    } else {
-      console.warn(`Element with ID '${sectionId}' not found.`);
-    }
-  };
-
   return (
     <div className="font-montserrat flex justify-between  pt-[20px] pb-[82px] px-[80px] items-center text-[14px]">
       <div className="logo">
@@ -24,13 +13,9 @@ function NavBar() {
       </div>
       <div className="flex gap-[84px] text-white font-bold ">
         {NAVS.map((item) => (
-          <div
-            className="cursor-pointer"
-            key={item.key}
-            onClick={() => scrollToSection(item.key)}
-          >
-            {item.title}
-          </div>
+          <a className="cursor-pointer" key={item.href} href={item.href}>
+            <Trans>{item.title}</Trans>
+          </a>
         ))}
       </div>
     </div>

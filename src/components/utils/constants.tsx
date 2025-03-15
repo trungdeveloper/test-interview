@@ -1,18 +1,24 @@
-export const NAVS = [
-  {
-    key: "about-us",
+export const NavItem = {
+  aboutUs: {
     title: "About Us",
+    href: "#aboutus",
+    id: "aboutus",
   },
-  {
-    key: "games",
+  games: {
     title: "Games",
+    href: "#games",
+    id: "games",
   },
-  {
-    key: "partners",
-    title: "About Us",
+  partners: {
+    title: "Partners",
+    href: "#partners",
+    id: "partners",
   },
-  {
-    key: "contact-us",
+  contactUs: {
     title: "Contact Us",
+    href: "#contactus",
+    id: "contactus",
   },
-];
+};
+
+export const NAVS = Object.values(NavItem).map((item) => item);

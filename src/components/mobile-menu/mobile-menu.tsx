@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { Trans } from "@lingui/react/macro";
+import { NAVS } from "../utils/constants";
 
 interface MenuItemProps {
   title: string;
@@ -68,7 +70,7 @@ export function MobileMenu() {
               </div>
               <nav className="flex-1">
                 <ul className="flex flex-col">
-                  {menuItems.map((item, index) => (
+                  {NAVS.map((item, index) => (
                     <li key={item.title}>
                       <a
                         href={item.href}
@@ -78,7 +80,7 @@ export function MobileMenu() {
                         )}
                         onClick={() => setIsOpen(false)}
                       >
-                        {item.title}
+                        <Trans id={`nav.${item.id}`}>{item.title}</Trans>
                       </a>
                     </li>
                   ))}

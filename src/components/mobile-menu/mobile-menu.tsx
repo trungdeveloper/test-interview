@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { Trans } from "@lingui/react/macro";
+import { useLingui } from "@lingui/react/macro";
 import { NAVS } from "../utils/constants";
 
 interface MenuItemProps {
@@ -20,6 +20,7 @@ const menuItems: MenuItemProps[] = [
 
 export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const { i18n } = useLingui();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -71,7 +72,7 @@ export function MobileMenu() {
               <nav className="flex-1">
                 <ul className="flex flex-col">
                   {NAVS.map((item, index) => (
-                    <li key={item.title}>
+                    <li key={item.id}>
                       <a
                         href={item.href}
                         className={cn(
@@ -80,7 +81,7 @@ export function MobileMenu() {
                         )}
                         onClick={() => setIsOpen(false)}
                       >
-                        <Trans id={`nav.${item.id}`}>{item.title}</Trans>
+                        {i18n._(item.title)}
                       </a>
                     </li>
                   ))}

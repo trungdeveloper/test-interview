@@ -1,7 +1,9 @@
+import { ReactNode } from "react";
+
 type DetailProps = {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
+  icon: ReactNode;
+  title: ReactNode; // Changed from string to ReactNode
+  description: ReactNode; // Changed from string to ReactNode
 };
 
 const Detail = ({ icon, title, description }: DetailProps) => {
@@ -14,7 +16,7 @@ const Detail = ({ icon, title, description }: DetailProps) => {
         <div className="font-montserrat font-bold text-2xl leading-[1.88rem]">
           {title}
         </div>
-        <div className="font-normal text-sm leading-[140%] text-[#757575]">
+        <div className="text-sm leading-[140%] text-[#757575]">
           {description}
         </div>
       </div>

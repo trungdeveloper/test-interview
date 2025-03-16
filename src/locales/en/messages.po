@@ -1,62 +1,16 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2025-03-16 00:48+0700\n"
+"POT-Creation-Date: 2025-03-17 03:46+0700\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Plural-Forms: \n"
 
 #. js-lingui-explicit-id
 #: src/components/banner/Banner.tsx:30
 msgid "Enter your email"
 msgstr "Enter your email"
-
-#. js-lingui-explicit-id
-#: src/components/utils/constants.tsx:5
-#~ msgid "aboutus"
-#~ msgstr "About Us"
-
-#. js-lingui-explicit-id
-#: src/components/utils/constants.tsx:20
-#~ msgid "contactus"
-#~ msgstr "Contact Us"
-
-#. js-lingui-explicit-id
-#: src/components/utils/constants.tsx:10
-#~ msgid "games"
-#~ msgstr "Games"
-
-#. js-lingui-explicit-id
-#: src/components/utils/constants.tsx:15
-#~ msgid "partners"
-#~ msgstr "Partners"
-#: src/components/about-us/about-us.tsx:74
-#~ msgid "nav.tool"
-#~ msgstr "Tool"
-
-#. js-lingui-explicit-id
-#: src/components/about-us/about-us.tsx:74
-#~ msgid "nav.tool"
-#~ msgstr "Tool"
-
-#: src/components/header/NavBar.tsx:17
-#~ msgid "{0}"
-#~ msgstr "{0}"
-
-#: src/components/about-us/detail.tsx:24
-#~ msgid "{description}"
-#~ msgstr "{description}"
-
-#: src/components/about-us/detail.tsx:17
-#~ msgid "{title}"
-#~ msgstr "{title}"
 
 #: src/components/about-us/about-us.tsx:55
 msgid "24 - Hour"
@@ -108,15 +62,7 @@ msgstr "Hours"
 msgid "Minutes"
 msgstr "Minutes"
 
-#: src/components/utils/constants.tsx:15
-msgid "Partners"
-msgstr "Partners"
-
-#: src/components/banner/Coundown.tsx:77
-msgid "Seconds"
-msgstr "Seconds"
-
-#: src/components/our-games/index.tsx:10
+#: src/components/our-games/index.tsx:11
 msgid "Our Games"
 msgstr "Our Games"
 
@@ -124,21 +70,17 @@ msgstr "Our Games"
 msgid "Partners"
 msgstr "Partners"
 
+#: src/components/banner/Coundown.tsx:77
+msgid "Seconds"
+msgstr "Seconds"
+
 #: src/components/about-us/about-us.tsx:76
 msgid "Team"
 msgstr "Team"
 
-#: src/components/about-us/about-us.tsx:85
-#~ msgid "Tool"
-#~ msgstr "Tool"
-
 #: src/components/about-us/about-us.tsx:38
 msgid "Users"
 msgstr "Users"
-
-#: src/components/about-us/about-us.tsx:87
-#~ msgid "We are using the latest technology to create the best games for you."
-#~ msgstr "We are using the latest technology to create the best games for you."
 
 #: src/components/banner/Banner.tsx:23
 msgid "We will back to something amazing. Getting the latest updates about our games. Please sign up to our newsletter."

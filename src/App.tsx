@@ -10,8 +10,8 @@ function App() {
     <LanguageProvider>
       <div className="flex flex-col  gap-y-12 xl:gap-y-32">
         <div className="bg-[url('/background/header_background.png')] bg-no-repeat w-screen h-[90vh] bg-cover bg-center 2xl:bg-cover 2xl:bg-center mb-[8rem]">
-          <NavBar />
-          <Banner />
+          {/* <NavBar /> */}
+          {/* <Banner /> */}
         </div>
         <MobileMenu />
         <AboutUs />

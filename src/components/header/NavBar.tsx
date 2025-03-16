@@ -1,9 +1,10 @@
-import React from "react";
-import Logo from "/logo.svg";
+import { useLingui } from "@lingui/react/macro";
 import { NAVS } from "../utils/constants";
-import { Trans } from "@lingui/react/macro";
+import Logo from "/logo.svg";
 
 function NavBar() {
+  const { i18n } = useLingui();
+
   return (
     <div className="font-montserrat flex justify-between  pt-[20px] pb-[82px] px-[80px] items-center text-[14px]">
       <div className="logo">
@@ -14,7 +15,7 @@ function NavBar() {
       <div className="flex gap-[84px] text-white font-bold ">
         {NAVS.map((item) => (
           <a className="cursor-pointer" key={item.href} href={item.href}>
-            <Trans>{item.title}</Trans>
+            {i18n._(item.title)}
           </a>
         ))}
       </div>

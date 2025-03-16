@@ -9,13 +9,13 @@ const AboutUs = () => {
   return (
     <div
       id={NavItem.aboutUs.id}
-      className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 max-w-[1060px] mx-auto"
+      className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 max-w-[1160px] mx-auto"
     >
       <div className="px-4 md:px-0">
-        <h1 className="font-playfair text-[40px] font-[900]">
-          <Trans id={`nav.${NavItem.aboutUs.id}`}>About Us</Trans>
+        <h1 className="font-playfair text-[40px] font-[900] md:text-[60px] tracking-[3.6px]">
+          <Trans>About Us</Trans>
         </h1>
-        <p className="text-[#757575] font-montserrat text-sm mt-4 leading-[140%]">
+        <p className="text-[#757575] font-montserrat text-sm mt-4 leading-[140%] ">
           <Trans>
             Browse our selection of free online games and have a great time
             without leaving the site! Our Kids Games option also includes game
@@ -27,9 +27,9 @@ const AboutUs = () => {
             on Etech.
           </Trans>
         </p>
-        <div className="grid grid-cols-2 gap-4 mt-10 font-montserrat">
+        <div className="grid grid-cols-2 gap-4 mt-10 md:mt-20 font-montserrat md:grid-cols-1 md:gap-y-10">
           <div className="flex flex-col">
-            <span className=" text-[#079BEE] tracking-[-1px] text-[44px] font-bold">
+            <span className=" text-[#079BEE] tracking-[-1px] text-[44px] md:text-[80px] font-bold">
               600<span className="font-bold text-xl">M</span>+
             </span>
             <span className="font-bold text-2xl leading-[1.88rem]">
@@ -37,7 +37,7 @@ const AboutUs = () => {
             </span>
           </div>
           <div className="flex flex-col">
-            <span className=" text-[#079BEE] tracking-[-1px] text-[44px] font-bold">
+            <span className=" text-[#079BEE] tracking-[-1px] text-[44px] md:text-[80px] font-bold">
               135+
             </span>
             <span className="font-bold text-2xl leading-[1.88rem]">
@@ -47,26 +47,37 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="flex flex-col bg-[#EEEEEE] px-4 py-10 gap-10">
+      <div className="flex flex-col bg-[#EEEEEE] px-4 md:px-[75px] py-10 gap-10 justify-center">
         <Detail
           icon={<TimeIcon />}
-          title={"24 - Hour"}
+          title={<Trans>24 - Hour</Trans>}
           description={
-            "24/7 access ensures operators' businesses runs smoothly all year long."
+            <Trans>
+              24/7 access ensures operators' businesses runs smoothly all year
+              long.
+            </Trans>
           }
         />
         <Detail
           icon={<DesignIcon />}
-          title={"Design"}
+          title={<Trans>Design</Trans>}
           description={
-            "Combining imaginative universes, play dynamics, and unprecedented gameplay, our games transcend the boundaries of the virtual world by weaving innovative gameplay."
+            <Trans>
+              Combining imaginative universes, play dynamics, and unprecedented
+              gameplay, our games transcend the boundaries of the virtual world
+              by weaving innovative gameplay.
+            </Trans>
           }
         />
         <Detail
           icon={<TeamIcon />}
-          title={"Team"}
+          title={<Trans>Team</Trans>}
           description={
-            "Etech is an award-winning, international studio of designers, artists, animators and producers that create content for the biggest names in film and video games. "
+            <Trans>
+              Etech is an award-winning, international studio of designers,
+              artists, animators and producers that create content for the
+              biggest names in film and video games.
+            </Trans>
           }
         />
       </div>

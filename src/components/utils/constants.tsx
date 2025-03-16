@@ -1,21 +1,23 @@
+import { msg } from "@lingui/core/macro";
+
 export const NavItem = {
   aboutUs: {
-    title: "About Us",
+    title: msg`About Us`,
     href: "#aboutus",
     id: "aboutus",
   },
   games: {
-    title: "Games",
+    title: msg`Games`,
     href: "#games",
     id: "games",
   },
   partners: {
-    title: "Partners",
+    title: msg`Partners`,
     href: "#partners",
     id: "partners",
   },
   contactUs: {
-    title: "Contact Us",
+    title: msg`Contact Us`,
     href: "#contactus",
     id: "contactus",
   },

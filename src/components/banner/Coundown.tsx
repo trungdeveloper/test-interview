@@ -1,3 +1,4 @@
+import { Trans } from "@lingui/react/macro";
 import React, { useState, useEffect } from "react";
 
 // Define the type for the time left state
@@ -40,43 +41,40 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="rounded-[21px] py-[21px] px-[39px] text-[60px] bg-white text-black flex w-[756px] justify-between gap-[52px]">
-      <div className="flex flex-col">
-        <div className="text-[60px] font-black flex gap-[52px]">
+    <div className="flex items-center rounded-[21px] py-[1.3125rem] px-[2.4375rem] text-[2.5rem] lg:text-[3.75rem] bg-white text-black w-[80vw]  lg:w-[50vw]  max-sm:w-[95vw] justify-between gap-[1rem]">
+      <div className="flex flex-col gap-[0.5rem]">
+        <div className="text-[2.5rem] max-sm:text-[1.5rem] font-black">
           <span>{timeLeft.days || "0"} </span>
-          <span className="font-normal">:</span>{" "}
         </div>
-        <div className="font-montserrat font-bold text-[15px] ml-[19px]">
-          Days
-        </div>
-      </div>
-
-      <div className="flex flex-col">
-        <div className="text-[60px] font-black flex gap-[52px]">
-          <span>{timeLeft.hours || "0"}</span>{" "}
-          <span className="font-normal">:</span>{" "}
-        </div>
-        <div className="font-montserrat font-bold text-[15px] ml-[19px]">
-          Hours
+        <div className="font-montserrat font-bold text-[1rem] max-sm:text-[0.5rem]">
+          <Trans>Days</Trans>
         </div>
       </div>
-
-      <div className="flex flex-col">
-        <div className="text-[60px] font-black flex gap-[52px]">
-          <span>{timeLeft.minutes || "0"}</span>{" "}
-          <span className="font-normal">:</span>{" "}
+      <span className="font-normal">:</span>
+      <div className="flex flex-col gap-[0.5rem]">
+        <div className="text-[2.5rem] max-sm:text-[1.5rem] font-black">
+          <span>{timeLeft.hours || "0"}</span>
         </div>
-        <div className="font-montserrat font-bold text-[15px] ml-[19px]">
-          Minutes
+        <div className="font-montserrat font-bold text-[1rem] max-sm:text-[0.5rem] ">
+          <Trans>Hours</Trans>
         </div>
       </div>
-
-      <div className="flex flex-col">
-        <div className="text-[60px] font-black flex gap-[52px]">
+      <span className="font-normal">:</span>
+      <div className="flex flex-col gap-[0.5rem]">
+        <div className="text-[2.5rem] max-sm:text-[1.5rem] font-black">
+          <span>{timeLeft.minutes || "0"}</span>
+        </div>
+        <div className="font-montserrat font-bold text-[1rem] max-sm:text-[0.5rem] ">
+          <Trans>Minutes</Trans>
+        </div>
+      </div>
+      <span className="font-normal">:</span>
+      <div className="flex flex-col gap-[0.5rem]">
+        <div className="text-[2.5rem] max-sm:text-[1.5rem] font-black">
           {timeLeft.seconds || "0"}
         </div>
-        <div className="font-montserrat font-bold text-[15px] ml-[19px]">
-          Seconds
+        <div className="font-montserrat font-bold text-[1rem] max-sm:text-[0.5rem]">
+          <Trans>Seconds</Trans>
         </div>
       </div>
     </div>

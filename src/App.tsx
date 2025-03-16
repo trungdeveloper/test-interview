@@ -8,10 +8,14 @@ function App() {
   return (
     <LanguageProvider>
       <div className="flex flex-col">
-        {/* <div className="bg-[url('/background/header_background.png')] bg-no-repeat h-[1018px] bg-contain">
-        <NavBar />
-        <Banner />
-      </div> */}
+        <div
+          className="bg-[url('/background/header_background.png')] bg-no-repeat w-screen h-[90vh] 
+                    bg-cover bg-center 
+                    2xl:bg-cover 2xl:bg-center mb-[8rem]"
+        >
+          <NavBar />
+          <Banner />
+        </div>
         <MobileMenu />
         <AboutUs />
       </div>

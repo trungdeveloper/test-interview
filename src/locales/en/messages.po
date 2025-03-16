@@ -37,6 +37,9 @@ msgstr "Enter your email"
 #: src/components/utils/constants.tsx:15
 #~ msgid "partners"
 #~ msgstr "Partners"
+#: src/components/about-us/about-us.tsx:74
+#~ msgid "nav.tool"
+#~ msgstr "Tool"
 
 #. js-lingui-explicit-id
 #: src/components/about-us/about-us.tsx:74
@@ -63,7 +66,7 @@ msgstr "24 - Hour"
 msgid "24/7 access ensures operators' businesses runs smoothly all year long."
 msgstr "24/7 access ensures operators' businesses runs smoothly all year long."
 
-#: src/components/utils/constants.tsx:5
+#: src/components/utils/constants.ts:5
 #: src/components/about-us/about-us.tsx:18
 msgid "About Us"
 msgstr "About Us"
@@ -76,7 +79,7 @@ msgstr "Browse our selection of free online games and have a great time without 
 msgid "Combining imaginative universes, play dynamics, and unprecedented gameplay, our games transcend the boundaries of the virtual world by weaving innovative gameplay."
 msgstr "Combining imaginative universes, play dynamics, and unprecedented gameplay, our games transcend the boundaries of the virtual world by weaving innovative gameplay."
 
-#: src/components/utils/constants.tsx:20
+#: src/components/utils/constants.ts:20
 msgid "Contact Us"
 msgstr "Contact Us"
 
@@ -92,7 +95,7 @@ msgstr "Design"
 msgid "Etech is an award-winning, international studio of designers, artists, animators and producers that create content for the biggest names in film and video games."
 msgstr "Etech is an award-winning, international studio of designers, artists, animators and producers that create content for the biggest names in film and video games."
 
-#: src/components/utils/constants.tsx:10
+#: src/components/utils/constants.ts:10
 #: src/components/about-us/about-us.tsx:46
 msgid "Games"
 msgstr "Games"
@@ -112,6 +115,14 @@ msgstr "Partners"
 #: src/components/banner/Coundown.tsx:77
 msgid "Seconds"
 msgstr "Seconds"
+
+#: src/components/our-games/index.tsx:10
+msgid "Our Games"
+msgstr "Our Games"
+
+#: src/components/utils/constants.ts:15
+msgid "Partners"
+msgstr "Partners"
 
 #: src/components/about-us/about-us.tsx:76
 msgid "Team"

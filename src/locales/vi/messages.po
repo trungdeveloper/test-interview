@@ -26,7 +26,7 @@ msgstr "Truy Cập 24/7"
 msgid "24/7 access ensures operators' businesses runs smoothly all year long."
 msgstr "Đảm bảo hoạt động kinh doanh của các nhà khai thác hoạt động trơn tru suốt cả năm."
 
-#: src/components/utils/constants.tsx:5
+#: src/components/utils/constants.ts:5
 #: src/components/about-us/about-us.tsx:18
 msgid "About Us"
 msgstr "Về chúng tôi"
@@ -39,13 +39,9 @@ msgstr "Duyệt qua tuyển chọn các trò chơi trực tuyến miễn phí c�
 msgid "Combining imaginative universes, play dynamics, and unprecedented gameplay, our games transcend the boundaries of the virtual world by weaving innovative gameplay."
 msgstr "Kết hợp các vũ trụ giàu trí tưởng tượng, động lực chơi và lối chơi chưa từng có, trò chơi của chúng tôi vượt qua ranh giới của thế giới ảo bằng cách tạo ra lối chơi sáng tạo."
 
-#: src/components/utils/constants.tsx:20
+#: src/components/utils/constants.ts:20
 msgid "Contact Us"
 msgstr "Liên hệ"
-
-#: src/components/banner/Coundown.tsx:50
-msgid "Days"
-msgstr "Ngày"
 
 #: src/components/about-us/about-us.tsx:65
 msgid "Design"
@@ -55,7 +51,7 @@ msgstr "Thiết Kế"
 msgid "Etech is an award-winning, international studio of designers, artists, animators and producers that create content for the biggest names in film and video games."
 msgstr "Etech là một studio quốc tế, từng đoạt giải thưởng gồm các nhà thiết kế, nghệ sĩ, họa sĩ hoạt hình và nhà sản xuất chuyên tạo ra nội dung cho những tên tuổi lớn nhất trong lĩnh vực điện ảnh và trò chơi điện tử."
 
-#: src/components/utils/constants.tsx:10
+#: src/components/utils/constants.ts:10
 #: src/components/about-us/about-us.tsx:46
 msgid "Games"
 msgstr "Trò chơi"
@@ -75,6 +71,14 @@ msgstr "Đối tác"
 #: src/components/banner/Coundown.tsx:77
 msgid "Seconds"
 msgstr "Giây"
+
+#: src/components/our-games/index.tsx:10
+msgid "Our Games"
+msgstr ""
+
+#: src/components/utils/constants.ts:15
+msgid "Partners"
+msgstr "Đối tác"
 
 #: src/components/about-us/about-us.tsx:76
 msgid "Team"

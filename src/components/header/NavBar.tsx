@@ -1,19 +1,9 @@
-import React from "react";
-import Logo from "/logo.svg";
+import { useLingui } from "@lingui/react/macro";
 import { NAVS } from "../utils/constants";
+import Logo from "/logo.svg";
 
 function NavBar() {
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    } else {
-      console.warn(`Element with ID '${sectionId}' not found.`);
-    }
-  };
+  const { i18n } = useLingui();
 
   return (
     <div className="font-montserrat flex justify-between pt-[1.25rem] pb-[5.125rem] px-[5rem] items-center text-[0.875rem]">
@@ -24,13 +14,9 @@ function NavBar() {
       </div>
       <div className="hidden lg:flex gap-[84px] text-white font-bold">
         {NAVS.map((item) => (
-          <div
-            className="cursor-pointer"
-            key={item.key}
-            onClick={() => scrollToSection(item.key)}
-          >
-            {item.title}
-          </div>
+          <a className="cursor-pointer" key={item.href} href={item.href}>
+            {i18n._(item.title)}
+          </a>
         ))}
       </div>
     </div>

@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-03-16 00:49+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: vn\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/components/about-us/about-us.tsx:53
+msgid "24 - Hour"
+msgstr "Truy Cập 24/7"
+
+#: src/components/about-us/about-us.tsx:55
+msgid "24/7 access ensures operators' businesses runs smoothly all year long."
+msgstr "Đảm bảo hoạt động kinh doanh của các nhà khai thác hoạt động trơn tru suốt cả năm."
+
+#: src/components/utils/constants.tsx:5
+#: src/components/about-us/about-us.tsx:16
+msgid "About Us"
+msgstr "Về chúng tôi"
+
+#: src/components/about-us/about-us.tsx:19
+msgid "Browse our selection of free online games and have a great time without leaving the site! Our Kids Games option also includes game reviews, extensive game cheats and walkthroughs, and much more. We have exclusive free downloads, videos, and articles as well. Etech reviews the most popular kids games from all the most popular video gaming platforms, so you don’t need to search around for fun anywhere else on the Internet. Explore a whole new world of gaming on Etech."
+msgstr "Duyệt qua tuyển chọn các trò chơi trực tuyến miễn phí của chúng tôi và có một khoảng thời gian tuyệt vời mà không cần rời khỏi trang web! Tùy chọn Trò chơi dành cho Trẻ em của chúng tôi cũng bao gồm các bài đánh giá trò chơi, các trò chơi gian lận và hướng dẫn mở rộng, và nhiều hơn nữa. Chúng tôi cũng có các bản tải xuống, video và bài báo miễn phí độc quyền. Etech đánh giá các trò chơi trẻ em phổ biến nhất từ tất cả các nền tảng trò chơi điện tử phổ biến nhất, vì vậy bạn không cần phải tìm kiếm niềm vui ở bất kỳ nơi nào khác trên Internet. Khám phá một thế giới trò chơi hoàn toàn mới trên Etech."
+
+#: src/components/about-us/about-us.tsx:65
+msgid "Combining imaginative universes, play dynamics, and unprecedented gameplay, our games transcend the boundaries of the virtual world by weaving innovative gameplay."
+msgstr "Kết hợp các vũ trụ giàu trí tưởng tượng, động lực chơi và lối chơi chưa từng có, trò chơi của chúng tôi vượt qua ranh giới của thế giới ảo bằng cách tạo ra lối chơi sáng tạo."
+
+#: src/components/utils/constants.tsx:20
+msgid "Contact Us"
+msgstr "Liên hệ"
+
+#: src/components/about-us/about-us.tsx:63
+msgid "Design"
+msgstr "Thiết Kế"
+
+#: src/components/about-us/about-us.tsx:76
+msgid "Etech is an award-winning, international studio of designers, artists, animators and producers that create content for the biggest names in film and video games."
+msgstr "Etech là một studio quốc tế, từng đoạt giải thưởng gồm các nhà thiết kế, nghệ sĩ, họa sĩ hoạt hình và nhà sản xuất chuyên tạo ra nội dung cho những tên tuổi lớn nhất trong lĩnh vực điện ảnh và trò chơi điện tử."
+
+#: src/components/utils/constants.tsx:10
+#: src/components/about-us/about-us.tsx:44
+msgid "Games"
+msgstr "Trò chơi"
+
+#: src/components/utils/constants.tsx:15
+msgid "Partners"
+msgstr "Đối tác"
+
+#: src/components/about-us/about-us.tsx:74
+msgid "Team"
+msgstr "Đội Ngũ"
+
+#: src/components/about-us/about-us.tsx:85
+msgid "Tool"
+msgstr "Công cụ"
+
+#: src/components/about-us/about-us.tsx:36
+msgid "Users"
+msgstr "Người chơi"

@@ -11,7 +11,7 @@ function App() {
         <div
           className="bg-[url('/background/header_background.png')] bg-no-repeat w-screen h-[90vh] 
                     bg-cover bg-center 
-                    2xl:bg-cover 2xl:bg-center"
+                    2xl:bg-cover 2xl:bg-center mb-[8rem]"
         >
           <NavBar />
           <Banner />

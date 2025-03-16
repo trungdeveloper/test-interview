@@ -2,28 +2,32 @@ import CountdownTimer from "./Coundown";
 import oldMan from "../../assets/old_man.svg";
 import arrowRight from "../../assets/arrow-right.svg";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
+import { Trans, useLingui } from "@lingui/react/macro";
 
 function Banner() {
   const targetDate = new Date("2025-04-30T00:00:00"); // Pick some date
   const { width = 0 } = useWindowDimensions();
   const smallScreen = width <= 1024;
+  const { i18n } = useLingui();
 
   return (
     <div className="flex flex-col items-center justify-between lg:text-[5rem] text-[2.5rem] gap-[1.3125rem]">
       <div className="font-playfair text-white font-black text-center">
-        We’re {smallScreen && <br />}Getting Ready
+        <Trans>We’re {smallScreen && <br />}Getting Ready</Trans>
       </div>
       <div className="font-playfair z-10 leading-none">
         <CountdownTimer targetDate={targetDate} />
       </div>
       <div className="flex flex-col items-center justify-center z-10 mt-[4.75rem]">
         <span className="text-white text-[1.125rem] text-center w-[50vw]">
-          We will back to something amazing. Getting the latest updates about
-          our games. Please sign up to our newsletter.
+          <Trans>
+            We will back to something amazing. Getting the latest updates about
+            our games. Please sign up to our newsletter.
+          </Trans>
         </span>
         <div className="flex justify-center items-center bg-white rounded-[8px] pr-[14px] mt-[2rem]">
           <input
-            placeholder="Enter your email"
+            placeholder={i18n._("Enter your email")}
             className="bg-white rounded-[8px] placeholder:text-sm w-[85vw] lg:w-[30vw] py-[18px] px-[14px] h-[56px] border-none focus:outline-none text-sm"
           />
           <img src={arrowRight} className="cursor-pointer" alt="Enter Name" />

@@ -29,7 +29,7 @@ export function MobileMenu() {
     <>
       {/* Menu Button */}
       <button
-        className="fixed top-4 right-4 z-50 p-2 focus:outline-none"
+        className="flex lg:hidden fixed top-4 right-4 z-50 p-2 focus:outline-none"
         onClick={toggleMenu}
         aria-label={isOpen ? "Close menu" : "Open menu"}
       >

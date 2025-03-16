@@ -7,22 +7,23 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useLanguage } from "@/language-provider";
+import { useLanguage } from "@/context/language-provider";
+import { LanguageType } from "@/types/language-type";
 
 type Language = {
-  code: string;
+  code: LanguageType;
   name: string;
   flag: string;
 };
 
 const languages: Language[] = [
   {
-    code: "vn",
+    code: LanguageType.VI,
     name: "Vietnamese",
     flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/img-axVPxjwEmhDNkY6VGyZh5QZGoQYycc.png", // Using the provided img for demo
   },
   {
-    code: "en",
+    code: LanguageType.EN,
     name: "English",
     flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/img-axVPxjwEmhDNkY6VGyZh5QZGoQYycc.png", // Using the provided img for demo
   },
@@ -33,8 +34,6 @@ export function LanguageSelector() {
   const [selectedLanguage, setSelectedLanguage] = useState<Language>(
     languages.find((lg) => lg.code === locale) || languages[0]
   );
-
-  console.log(locale);
 
   const handleChangeLanguage = (language: Language) => {
     setLocale(language.code);

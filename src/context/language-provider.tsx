@@ -7,11 +7,12 @@ import {
 } from "react";
 import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
-import { dynamicActivate, initI18n } from "../i18n";
+import { dynamicActivate, initI18n } from "../../i18n";
+import { LanguageType } from "../types/language-type";
 
 type LanguageContextType = {
-  locale: string;
-  setLocale: (locale: string) => void;
+  locale: LanguageType;
+  setLocale: (locale: LanguageType) => void;
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
@@ -19,7 +20,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 );
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState("vn");
+  const [locale, setLocaleState] = useState(LanguageType.VI);
   const [isLoaded, setIsLoaded] = useState(false);
 
   // Initialize i18n on first render
@@ -28,7 +29,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   }, []);
 
   // Function to change the locale
-  const setLocale = async (newLocale: string) => {
+  const setLocale = async (newLocale: LanguageType) => {
     await dynamicActivate(newLocale);
     setLocaleState(newLocale);
   };

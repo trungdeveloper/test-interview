@@ -53,15 +53,15 @@ export function MobileMenu() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed top-0 right-0 h-full w-full max-w-[100%] sm:max-w-[320px] bg-white z-40 shadow-xl"
+            className="fixed top-0 right-0 h-dvh w-full max-w-[100%] sm:max-w-[320px] bg-white z-40 shadow-xl"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
           >
-            <div className="flex h-full flex-col">
+            <div className="flex h-dvh flex-col">
               <div className="flex items-center justify-between p-4 border-b">
-                <div className="flex items-center space-x-2 border rounded-md px-3 py-2">
+                <div className="flex items-center space-x-2 border rounded-xl px-3 border-[#AFAFAF] ">
                   <LanguageSelector />
                 </div>
               </div>
@@ -130,7 +130,7 @@ function MenuIcon({ isOpen }: MenuIconProps) {
   };
 
   const lineProps = {
-    stroke: "currentColor",
+    stroke: isOpen ? "black" : "white",
     strokeWidth: 2,
     vectorEffect: "non-scaling-stroke",
     initial: "closed",

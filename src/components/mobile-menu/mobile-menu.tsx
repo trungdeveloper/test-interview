@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { useLingui } from "@lingui/react/macro";
 import { NAVS } from "../utils/constants";
+import { LanguageSelector } from "../language-selector";
 
 interface MenuItemProps {
   title: string;
@@ -61,12 +62,7 @@ export function MobileMenu() {
             <div className="flex h-full flex-col">
               <div className="flex items-center justify-between p-4 border-b">
                 <div className="flex items-center space-x-2 border rounded-md px-3 py-2">
-                  <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9ylFr3VlLydTHctQ7C8lc925faSOtP.png"
-                    alt="US Flag"
-                    className="w-8 h-5"
-                  />
-                  <span className="text-sm">▼</span>
+                  <LanguageSelector />
                 </div>
               </div>
               <nav className="flex-1">

@@ -59,6 +59,10 @@ msgstr "Đối tác"
 msgid "Team"
 msgstr "Đội Ngũ"
 
+#: src/components/about-us/about-us.tsx:85
+msgid "Tool"
+msgstr "Công cụ"
+
 #: src/components/about-us/about-us.tsx:36
 msgid "Users"
 msgstr "Người chơi"

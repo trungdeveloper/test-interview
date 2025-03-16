@@ -19,7 +19,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 );
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState("en");
+  const [locale, setLocaleState] = useState("vn");
   const [isLoaded, setIsLoaded] = useState(false);
 
   // Initialize i18n on first render

@@ -88,9 +88,22 @@ msgid "Partners"
 msgstr "Partners"
 
 #: src/components/about-us/about-us.tsx:74
-msgid "Team"
-msgstr "Team"
+#~ msgid "Team"
+#~ msgstr "Team"
+
+#. js-lingui-explicit-id
+#: src/components/about-us/about-us.tsx:74
+msgid "nav.tool"
+msgstr "Tool"
+
+#: src/components/about-us/about-us.tsx:85
+msgid "Tool"
+msgstr "Tool"
 
 #: src/components/about-us/about-us.tsx:36
 msgid "Users"
 msgstr "Users"
+
+#: src/components/about-us/about-us.tsx:87
+msgid "We are using the latest technology to create the best games for you."
+msgstr "We are using the latest technology to create the best games for you."

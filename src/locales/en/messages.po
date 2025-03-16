@@ -80,6 +80,10 @@ msgstr "Combining imaginative universes, play dynamics, and unprecedented gamepl
 msgid "Contact Us"
 msgstr "Contact Us"
 
+#: src/components/banner/Coundown.tsx:50
+msgid "Days"
+msgstr "Days"
+
 #: src/components/about-us/about-us.tsx:65
 msgid "Design"
 msgstr "Design"
@@ -93,9 +97,21 @@ msgstr "Etech is an award-winning, international studio of designers, artists, a
 msgid "Games"
 msgstr "Games"
 
+#: src/components/banner/Coundown.tsx:59
+msgid "Hours"
+msgstr "Hours"
+
+#: src/components/banner/Coundown.tsx:68
+msgid "Minutes"
+msgstr "Minutes"
+
 #: src/components/utils/constants.tsx:15
 msgid "Partners"
 msgstr "Partners"
+
+#: src/components/banner/Coundown.tsx:77
+msgid "Seconds"
+msgstr "Seconds"
 
 #: src/components/about-us/about-us.tsx:76
 msgid "Team"

@@ -43,6 +43,10 @@ msgstr "Kết hợp các vũ trụ giàu trí tưởng tượng, động lực c
 msgid "Contact Us"
 msgstr "Liên hệ"
 
+#: src/components/banner/Coundown.tsx:50
+msgid "Days"
+msgstr "Ngày"
+
 #: src/components/about-us/about-us.tsx:65
 msgid "Design"
 msgstr "Thiết Kế"
@@ -56,9 +60,21 @@ msgstr "Etech là một studio quốc tế, từng đoạt giải thưởng gồ
 msgid "Games"
 msgstr "Trò chơi"
 
+#: src/components/banner/Coundown.tsx:59
+msgid "Hours"
+msgstr "Giờ"
+
+#: src/components/banner/Coundown.tsx:68
+msgid "Minutes"
+msgstr "Phút"
+
 #: src/components/utils/constants.tsx:15
 msgid "Partners"
 msgstr "Đối tác"
+
+#: src/components/banner/Coundown.tsx:77
+msgid "Seconds"
+msgstr "Giây"
 
 #: src/components/about-us/about-us.tsx:76
 msgid "Team"

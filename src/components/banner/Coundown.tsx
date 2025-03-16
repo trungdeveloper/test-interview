@@ -1,3 +1,4 @@
+import { Trans } from "@lingui/react/macro";
 import React, { useState, useEffect } from "react";
 
 // Define the type for the time left state
@@ -46,7 +47,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
           <span>{timeLeft.days || "0"} </span>
         </div>
         <div className="font-montserrat font-bold text-[1rem] max-sm:text-[0.5rem]">
-          Days
+          <Trans>Days</Trans>
         </div>
       </div>
       <span className="font-normal">:</span>
@@ -55,7 +56,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
           <span>{timeLeft.hours || "0"}</span>
         </div>
         <div className="font-montserrat font-bold text-[1rem] max-sm:text-[0.5rem] ">
-          Hours
+          <Trans>Hours</Trans>
         </div>
       </div>
       <span className="font-normal">:</span>
@@ -64,7 +65,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
           <span>{timeLeft.minutes || "0"}</span>
         </div>
         <div className="font-montserrat font-bold text-[1rem] max-sm:text-[0.5rem] ">
-          Minutes
+          <Trans>Minutes</Trans>
         </div>
       </div>
       <span className="font-normal">:</span>
@@ -73,7 +74,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
           {timeLeft.seconds || "0"}
         </div>
         <div className="font-montserrat font-bold text-[1rem] max-sm:text-[0.5rem]">
-          Seconds
+          <Trans>Seconds</Trans>
         </div>
       </div>
     </div>

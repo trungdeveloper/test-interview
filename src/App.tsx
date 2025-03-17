@@ -5,6 +5,7 @@ import AboutUs from "./components/about-us/about-us";
 import { LanguageProvider } from "./context/language-provider";
 import OurGames from "./components/our-games";
 import ScrollButton from "./scroll-button";
+import PartnersSection from "./components/partners";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <MobileMenu />
         <AboutUs />
         <OurGames />
+        <PartnersSection />
         <ScrollButton />
       </div>
     </LanguageProvider>

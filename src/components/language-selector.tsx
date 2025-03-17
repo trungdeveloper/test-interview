@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useLanguage } from "@/context/language-provider";
 import { LanguageType } from "@/types/language-type";
+import ChevronIcon from "@/assets/icons/chevron-icon.svg?react";
 
 type Language = {
   code: LanguageType;
@@ -20,12 +21,12 @@ const languages: Language[] = [
   {
     code: LanguageType.VI,
     name: "Vietnamese",
-    flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/img-axVPxjwEmhDNkY6VGyZh5QZGoQYycc.png", // Using the provided img for demo
+    flag: "/assets/images/vietnam-flag.png", // Using the provided img for demo
   },
   {
     code: LanguageType.EN,
     name: "English",
-    flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/img-axVPxjwEmhDNkY6VGyZh5QZGoQYycc.png", // Using the provided img for demo
+    flag: "/assets/images/us-flag.png", // Using the provided img for demo
   },
 ];
 
@@ -43,17 +44,20 @@ export function LanguageSelector() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <button className="flex items-center justify-center">
+        <button className="flex items-center justify-center select-none lg:h-10 lg:w-16">
           <img
             src={selectedLanguage.flag || "/placeholder.svg"}
             alt={selectedLanguage.name}
-            width={30}
-            height={20}
+            width={40}
             className="rounded-sm"
           />
+          <ChevronIcon className="pl-1 w-6 h-6" />
         </button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-[230px] rounded-xl p-0 border shadow-md">
+      <DropdownMenuContent
+        align="end"
+        className="w-[230px] rounded-xl p-0 border shadow-md"
+      >
         {languages.map((language) => (
           <DropdownMenuItem
             key={language.code}
